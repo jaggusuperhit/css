@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Animation</title>
+    <style type="text/css">
+        body {
+            background-color: white;
+        }
+        .box {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            animation-name: roll;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes roll {
+            0% {
+                background-color: white;
+                top: 0px;
+                left: 0px;
+            }
+            25% {
+                background-color: red;
+                top: 0px;
+                left: 45%;
+                border-radius: 50%;
+            }
+            50% {
+                background-color: yellow;
+                top: 200px;
+                left: 45%;
+                border-radius: 50%;
+            }
+            100% {
+                background-color: green;
+                top: 200px;
+                left: 92%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

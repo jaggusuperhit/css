@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS ANIMATION</title>
+</head>
+
+<style type="text/css">
+
+	body{
+		background-color: #333;
+	}
+
+
+	.box{
+		background-color: white;
+		width: 200px;
+		height: 200px;
+		animation-name: myanimation;
+		animation-duration: 3s;
+		animation-delay: 1s;
+		animation-iteration-count: 3;
+		animation-direction: alternate;
+		animation-timing-function: ease-in;
+		animation-fill-mode: forwards;
+	}
+
+	@keyframes myanimation{
+		from{
+			background-color: white;
+		}
+
+		to{
+
+			background-color: green;
+			width: 400px;
+	
+
+		}
+	
+	}
+	
+
+</style>
+
+<body>
+	<div class="box">
+		
+	</div>
+
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Media Queries</title>
+    <style type="text/css">
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+            padding: 10px;
+        }
+        .box {
+            border: 1px black solid;
+            padding: 10px;
+        }
+        #heading {
+            grid-column: 1 / -1;
+            text-align: center;
+        }
+        #right {
+            font-size: 20px;
+            text-align: justify;
+        }
+        #left img {
+            width: 100%;
+            height: auto;
+        }
+
+        @media (min-width: 1024px){
+        	body{
+        		background-color: blue;
+        		color: white;
+        	}
+        }
+
+        @media (max-width: 768px) {
+            body {
+                background-color: black;
+                color: white;
+            }
+            .container {
+                grid-template-columns: 1fr;
+            }
+            #left img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        @media (max-width: 468px) {
+            body {
+                background-color: red;
+            }
+            .box {
+                border: none;
+            }
+            #right p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="heading">
+            <h2>Indian Premier League</h2>
+        </div>
+        <div class="box" id="left">
+            <img src="https://odishabytes.com/wp-content/uploads/2020/09/IPL-logo.jpg" alt="IPL Logo">
+        </div>
+        <div class="box" id="right">
+            <p>
+                IPL is a very popular cricket tournament in which players from different parts of the world. When IPL starts then nothing in the world seems more interesting than it, it looks very interesting to watch all the players playing together from different teams. The main aim of IPL was to make everyone aware of cricket and to bring new talented cricketers to the new every year through this tournament. People know that this intention has been proven true, IPL is held every year and with it, newcomer players are also introduced to the world.
+                IPL has now become a festival that people are celebrating every year, with their favorite team. Name of Indian premier league teams has been kept in the names of the state of India. The audience supports their favorite team and favorite player during the IPL, IPL continues for about 2 months. Audiences can watch live IPL on television or on other internet channels. 
+            </p>
+        </div>
+    </div>
+</body>
+</html>
